@@ -38,43 +38,24 @@ export interface IResultData {
    state: string;
    reg_no: string;
    session: string;
-   result: [
-      {
-         coursecode: string;
-         title: string;
-         credit_unit: number;
-         grade: string;
-         total_point: number;
-      },
-      {
-         coursecode: string;
-         title: string;
-         credit_unit: number;
-         grade: 'A';
-         total_point: number;
-      },
-      {
-         coursecode: string;
-         title: string;
-         credit_unit: number;
-         grade: 'C';
-         total_point: number;
-      },
-      {
-         coursecode: string;
-         title: string;
-         credit_unit: number;
-         grade: string;
-         total_point: number;
-      },
-   ];
-   cummulative: {
-      unts: number;
-      untd: number;
-      gpts: number;
-      gptd: number;
-      gpats: number;
-      gpatd:number;
-      remarks: string;
-   };
+   result: IResult[];
+   cummulative: ICummlative;
+}
+
+export interface IResult {
+   coursecode: string;
+   title: string;
+   credit_unit: number;
+   grade: string;
+   total_point: number;
+}
+
+export interface ICummlative {
+   unts: number;
+   untd: number;
+   gpts: number;
+   gptd: number;
+   gpats: number;
+   gpatd: number;
+   remarks: string;
 }

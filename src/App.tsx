@@ -1,5 +1,5 @@
 import { Filterform } from 'components/FilterForms';
-import { DataTable } from 'components/Table';
+import { DataTable } from 'components/studentTable';
 import { Spinner } from 'components/spinner';
 import { useEffect, useState } from 'react';
 import { IAllDataResources } from 'responseTypes';
@@ -20,9 +20,9 @@ function App() {
          if (!response.data) {
             setNoData(true);
          } else {
-           setData(response);
-           setNoData(false);
-           setLoading(false);
+            setData(response);
+            setNoData(false);
+            setLoading(false);
          }
       } catch (error) {
          console.error(error);
@@ -52,8 +52,8 @@ function App() {
                </div>
             </div>
             <div className="flex flex-col space-y-5 w-full bg-white">
-               {noData ? (
-                  <span className="text-center"></span>
+               {!data?.data ? (
+                  <span className="text-center">{data?.message}</span>
                ) : (
                   <DataTable studentData={data?.data.students} />
                )}
