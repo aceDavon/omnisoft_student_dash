@@ -1,0 +1,1 @@
+export const DataTableHead: string[] = ['s/no', 'surname', 'firstname', 'age', 'gender', 'level', 'state'];
