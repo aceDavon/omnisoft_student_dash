@@ -1,30 +1,27 @@
-# React + TypeScript + Vite
+# OmniSoft Student Dashboard :: Take Home
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a a take home project for front-end developer role.
 
-Currently, two official plugins are available:
+This project is built with React + TypeScript + Vite:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- [Vite:](https://vitejs.dev/guide/) A build tool that aims to provide a faster and leaner development experience for modern web projects.
+- [React:](https://react.dev/learn/start-a-new-react-project) React is a free and open-source front-end JavaScript library for building user interfaces based on components.
+- [TypeScript:](https://www.typescriptlang.org/) A free and open-source high-level programming language developed by Microsoft that adds static typing with optional type annotations to JavaScript.
 
-## Expanding the ESLint configuration
+## Getting Started
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+> Requirements:
+  - [Git:](https://git-scm.com/) A distributed version control system that tracks changes in any set of computer files, usually used for coordinating work among programmers who are collaboratively developing source code during software development.
 
-- Configure the top-level `parserOptions` property like this:
+  - [Node.js:](https://nodejs.org/en) A cross-platform, open-source JavaScript runtime environment that can run on Windows, Linux, Unix, macOS, and more.
+  - A code editor or IDE. [VScode](https://code.visualstudio.com/) recommended.
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+> [Download](https://github.com/aceDavon/omnisoft_student_dash) or [Clone](https://github.com/aceDavon/omnisoft_student_dash.git) the source code.
+
+- From a terminal on the source code folder, Run:
+
+```bash
+  yarn Install or npm install
+
+  yarn dev
 ```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
