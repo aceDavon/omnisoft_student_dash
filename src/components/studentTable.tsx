@@ -24,7 +24,6 @@ export function DataTable({ studentData }: DataTableProps) {
          if (response.data) {
             setData(response);
             setShowModal(true);
-            console.log(response);
          }
       } catch (error) {
          console.error(error);

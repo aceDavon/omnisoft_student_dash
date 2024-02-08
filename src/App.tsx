@@ -7,7 +7,7 @@ import { IAllDataResources } from 'responseTypes';
 function App() {
    const [data, setData] = useState<IAllDataResources | undefined>();
    const [loading, setLoading] = useState<boolean>(true);
-   const [noData, setNoData] = useState<boolean>(true);
+   const [, setNoData] = useState<boolean>(true);
 
    const allData = async () => {
       try {
